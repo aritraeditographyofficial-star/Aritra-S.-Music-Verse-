@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aritra S. Music Verse</title>
+
+  <meta
+    name="description"
+    content="Aritra S. Music Verse — Discover and enjoy music."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <a href="#home" class="logo">
+      ARITRA S.<span> MUSIC VERSE</span>
+    </a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#songs">Songs</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  </header>
+
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#home">Home</a>
+    <a href="#songs">Songs</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <div class="hero-content">
+
+      <p class="welcome">
+        WELCOME TO YOUR MUSIC SPACE
+      </p>
+
+      <h1>
+        ARITRA S.
+        <br>
+        <span>MUSIC VERSE</span>
+      </h1>
+
+      <p class="hero-text">
+        Discover, listen and enjoy your favourite music
+        in one beautiful place.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#songs" class="primary-btn">
+          🎧 Explore Songs
+        </a>
+
+        <a
+          href="https://whatsapp.com/channel/0029VbBJ4kv7NoZwpmd72I2U"
+          target="_blank"
+          class="secondary-btn"
+        >
+          📲 WhatsApp Channel
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SEARCH -->
+  <section class="search-area">
+
+    <div class="search-box">
+
+      <span>⌕</span>
+
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search your favourite song..."
+        onkeyup="searchSongs()"
+      >
+
+    </div>
+
+  </section>
+
+
+  <!-- SONG SECTION -->
+  <section id="songs" class="songs-section">
+
+    <div class="section-title">
+
+      <p>LATEST COLLECTION</p>
+
+      <h2>Music Library 🎵</h2>
+
+    </div>
+
+
+    <div id="songList" class="song-list">
+
+
+      <!-- SONG CARD -->
+
+      <article
+        class="song-card"
+        data-name="My First Song"
+      >
+
+        <div class="song-top">
+
+          <div class="album-art">
+            ♪
+          </div>
+
+          <div class="song-details">
+
+            <h3>My First Song</h3>
+
+            <p>Aritra S. Music Verse</p>
+
+          </div>
+
+        </div>
+
+
+        <audio controls preload="metadata">
+
+          <source
+            src="songs/song1.mp3"
+            type="audio/mpeg"
+          >
+
+          Your browser does not support audio.
+
+        </audio>
+
+      </article>
+
+
+      <!-- SONG CARD -->
+
+      <article
+        class="song-card"
+        data-name="My Second Song"
+      >
+
+        <div class="song-top">
+
+          <div class="album-art">
+            ♪
+          </div>
+
+          <div class="song-details">
+
+            <h3>My Second Song</h3>
+
+            <p>Aritra S. Music Verse</p>
+
+          </div>
+
+        </div>
+
+
+        <audio controls preload="metadata">
+
+          <source
+            src="songs/song2.mp3"
+            type="audio/mpeg"
+          >
+
+          Your browser does not support audio.
+
+        </audio>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+
+    <div class="about-card">
+
+      <p class="section-label">ABOUT</p>
+
+      <h2>
+        Welcome to
+        <span>Aritra S. Music Verse</span>
+      </h2>
+
+      <p>
+        A personal music space created for discovering,
+        listening to and sharing music that we have permission
+        to distribute.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CHANNEL -->
+  <section class="channel-section">
+
+    <div>
+
+      <p class="section-label">STAY CONNECTED</p>
+
+      <h2>Join our WhatsApp Channel</h2>
+
+      <p>
+        Get updates and new music posts directly on WhatsApp.
+      </p>
+
+    </div>
+
+
+    <a
+      href="https://whatsapp.com/channel/0029VbBJ4kv7NoZwpmd72I2U"
+      target="_blank"
+      class="channel-btn"
+    >
+      Join Channel →
+    </a>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+
+    <p class="section-label">CONTACT</p>
+
+    <h2>Let's connect.</h2>
+
+    <p>
+      For collaborations and enquiries, connect with us
+      through our WhatsApp channel.
+    </p>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-brand">
+      ARITRA S. MUSIC VERSE
+    </div>
+
+    <p>
+      © 2026 Aritra S. Music Verse
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
