@@ -1,9 +1,10 @@
 const songs = [
   {
-    title: "Your Song Name",
-    artist: "Aritra S.",
-    file: "songs/song1.mp3"
-  },
+    {
+  title: "Song 1",
+  artist: "Aritra Music Verse",
+  file: "songs/Song 1 by Aritra Music Verse.mp3"
+  }
   {
     title: "Your Second Song",
     artist: "Aritra S.",
