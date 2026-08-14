@@ -15,10 +15,11 @@ const songList = document.getElementById("songList");
 const audio = document.getElementById("audioPlayer");
 
 songs.forEach((song, index) => {
-  const item = document.createElement("div");
-  item.className = "song-card";
+  const card = document.createElement("div");
 
-  item.innerHTML = `
+  card.className = "song-card";
+
+  card.innerHTML = `
     <div>
       <h3>${song.title}</h3>
       <p>${song.artist}</p>
@@ -26,7 +27,7 @@ songs.forEach((song, index) => {
     <button onclick="playSong(${index})">▶ Play</button>
   `;
 
-  songList.appendChild(item);
+  songList.appendChild(card);
 });
 
 function playSong(index) {
